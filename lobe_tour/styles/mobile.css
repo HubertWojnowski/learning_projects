@@ -78,4 +78,20 @@ body {
 
 .content__heading--text{
   text-align: center;
+  max-width: 400px;
+  font-weight: 5800;
+}
+/*END OF Content*/
+/*VIDEO*/
+.video {
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+}
+
+.video__border {
+  border: solid #E8EDF0 20px;
+  border-radius: 25px;
+  border-left: solid #E8EDF0 50px;
+  border-right: solid #E8EDF0 50px;
 }
