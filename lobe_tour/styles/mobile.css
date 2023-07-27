@@ -95,3 +95,66 @@ body {
   border-left: solid #E8EDF0 50px;
   border-right: solid #E8EDF0 50px;
 }
+/*END OF VIDEO*/
+/*DOWNLOAD*/
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.download__text {
+  font-size: 40px;
+  font-weight:bolder;
+  text-align: center;
+}
+
+.button__download {
+  margin-top: 40px;
+  padding: 10px 40px 10px 40px;
+  background-color: #04ddb2;
+  font-size: 25px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*END OF DOWNLOAD*/
+/*FOOTER*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: first baseline;
+  margin-top: 80px;
+}
+
+.footer__about{
+  padding: 50px;
+  line-height: 40px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.footer__icons {
+  padding-top: 6px;
+  line-height: 60px;
+}
+
+.sub__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
