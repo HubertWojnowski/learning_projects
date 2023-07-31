@@ -1,19 +1,21 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #333;
 }
+
 /*HAMBURGER MENU*/
-.topnav {
+  .topnav {
     overflow: hidden;
     background-color: #fff;
     position: relative;
   }
-  
+
+
   .topnav #myLinks {
     display: none;
   }
-  
+
   .topnav a {
     color: black;
     padding: 14px 16px;
@@ -21,7 +23,7 @@ body {
     font-size: 25px;
     display: block;
   }
-  
+
   .topnav a.icon {
     font-size: 15px;
     background: #e0dddd;
@@ -33,29 +35,36 @@ body {
     right: 0;
     top: 0;
   }
-  
+
   .active {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     font-weight: bold;
   }
 
-  .topnav__menu--button{
+  .topnav__menu--button {
     display: flex;
     justify-content: center;
     padding: 2rem;
-}
+  }
 
-.topnav__button {
+  .topnav__button {
     padding: 10px 5em 10px 5em;
     background-color: #04ddb2;
     font-size: 25px;
     color: white;
     border: none;
     border-radius: 25px;
-}
+  }
+
 /* END OF HAMBURGER MENU*/
 /*CONTENT*/
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -72,15 +81,16 @@ body {
   font-weight: bolder;
 }
 
-.content__heading--greeen{
+.content__heading--greeen {
   color: #04ddb2;
 }
 
-.content__heading--text{
+.content__heading--text {
   text-align: center;
   max-width: 400px;
   font-weight: 5800;
 }
+
 /*END OF Content*/
 /*VIDEO*/
 .video {
@@ -95,6 +105,7 @@ body {
   border-left: solid #E8EDF0 50px;
   border-right: solid #E8EDF0 50px;
 }
+
 /*END OF VIDEO*/
 /*DOWNLOAD*/
 .download {
@@ -107,7 +118,7 @@ body {
 
 .download__text {
   font-size: 40px;
-  font-weight:bolder;
+  font-weight: bolder;
   text-align: center;
 }
 
@@ -133,7 +144,7 @@ body {
   margin-top: 80px;
 }
 
-.footer__about{
+.footer__about {
   padding: 50px;
   line-height: 40px;
   text-align: center;
@@ -157,4 +168,3 @@ h3 {
   line-height: 40px;
   text-decoration: none;
 }
-
