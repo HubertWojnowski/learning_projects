@@ -1,3 +1,26 @@
 @media screen and (min-width: 768px) {
-    
+    .content__heading {
+        font-size: 85px;
+    }
+
+    .content__heading--text {
+        font-size: 25px;
+        min-width: 700px;
+    }
+
+  .download__text{
+    font-size: 60px;
+    padding-top: 60px;
+  }
+
+  .button__download{
+    font-size: 20px;
+  }
+
+  .footer__part{
+    display: flex;  }
+
+  .footer {
+    font-size: 18px;
+  }
 }
