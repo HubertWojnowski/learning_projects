@@ -1,1 +1,1 @@
-# practise__projects
+# learning_projects
