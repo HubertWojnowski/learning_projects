@@ -39,21 +39,13 @@ let showPreviousSlide = () => {
     showSlide(activeSlideNumber);
 }
 
-let showSlide1 = () => {
-    activeSlideNumber = 1;
-    showSlide(1);
+for (let i = 1; i <= 3; i++) {
+    let showSlideI = () => {
+        activeSlideNumber = 3;
+        showSlide(i);
+    }
+    document.querySelector('#dot'+i).addEventListener('click', showSlideI)
 }
-let showSlide2 = () => {
-    activeSlideNumber = 2;
-    showSlide(2);
-}
-let showSlide3 = () => {
-    activeSlideNumber = 3;
-    showSlide(3);
-}
-dot1.addEventListener('click', showSlide1)
-dot2.addEventListener('click', showSlide2);
-dot3.addEventListener('click', showSlide3);
 
 
 arrowRight.addEventListener('click', showNextSlide);
