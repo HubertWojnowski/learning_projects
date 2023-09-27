@@ -1,33 +1,26 @@
+//generate one of three options 
+function getComputerChoice() {
+  const options = ["rock", "paper", "scissors"];
+  const randomOption = Math.floor(Math.random() * options.length);
+  return options[randomOption];
+}
 
-const randomNumber = Math.floor(Math.random() * 3) + 1;
-
-
-
-
-
-
-
-
-
-
-
-
+//Get player choice
+function getPlayerSelection() {
+  const playerSelection = prompt("Input your choice.").toLowerCase();
+  return playerSelection
+}
 
 
-
-
-
-
-
-
-
-
-
+const playerSelection = getPlayerSelection();
+const computerSelection = getComputerChoice();
+console.log(playerSelection, computerSelection)
 
 function playRound(playerSelection, computerSelection) {
-    // your code here!
+  if (playerSelection === computerSelection){
+    return "Tie!"
   }
-   
-  const playerSelection = "rock";
-  const computerSelection = getComputerChoice();
-  console.log(playRound(playerSelection, computerSelection)
+}
+  
+
+console.log(playRound())
