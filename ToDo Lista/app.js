@@ -25,7 +25,6 @@ const prepareDOMElements = () => {
     errorInfo = document.querySelector('.error-info')
     addBtn = document.querySelector('.btn-add')
     ulList = document.querySelector('.todoList ul')
-
     popup = document.querySelector('.popup')
     popupInfo = document.querySelector('.popup-info')
     popupInput = document.querySelector('.popup-input')
@@ -38,6 +37,7 @@ const prepareDOMEvents = () => {
     ulList.addEventListener('click', checkClick)
     popupCloseBtn.addEventListener('click', closePopup)
     popupAddBtn.addEventListener('click', changeTodoText)
+    todoInput.addEventListener('keyup', enterKeyCheck)
 }
 
 
@@ -82,8 +82,8 @@ const checkClick = e => {
         e.target.classList.toggle('completed')
     } else if (e.target.matches('.edit')) {
         editTodo(e)
-    } else if (e.target.matches('delete')) {
-        e.target.closest('li').classList.toggle('delete')
+    } else if (e.target.matches('.delete')) {
+        deleteTodo(e)
     }
 }
 
@@ -106,6 +106,22 @@ const changeTodoText = () => {
         popupInfo.textContent = ''
     } else {
         popupInfo.textContent = 'Musisz podać jakąś treść!!'
+    }
+}
+
+const deleteTodo = e => {
+    e.target.closest('li').remove()
+
+    const allTodos = ulList.querySelectorAll('li')
+
+    if(allTodos.length === 0){
+        errorInfo.textContent = 'Brak zadań na liście'
+    }
+}
+
+const enterKeyCheck = e => {
+    if (e.key === 'Enter'){
+        addNewTodo()
     }
 }
 
