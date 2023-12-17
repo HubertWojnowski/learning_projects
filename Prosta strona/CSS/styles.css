@@ -63,3 +63,102 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+main {
+    margin: 50px auto;
+    width: 1200px;
+
+}
+
+main h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-us-box {
+    margin: 40px 0;
+    position: relative;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    border-radius: 50px 0 50px 0;
+    overflow: hidden;
+}
+
+.top {
+    background-image: url('../img/coffee-4334647_1920.jpg');
+}
+
+.middle {
+    background-image: url('../img/mobile-phone-1875813_1920.jpg');
+}
+
+.bottom {
+    background-image: url('../img/office-620822_1920.jpg');
+}
+
+.about-us-text {
+    position: absolute;
+    bottom: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.about-us-text h3 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+
+.about-us-bg {
+    position: absolute;
+    bottom: 0;
+    height: 45%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.sub-pages {
+    position: relative;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+table {
+
+    left: 28%;
+}
+
+.services {
+    left: 46%;
+}
+
+.contact {
+    left: 44%;
+}
+
+footer {
+    height: 80px;
+    line-height: 80px;
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    font-style: 20px;
+}
+
+.icon-box {
+    margin-left: 20px;
+}
+
+.icon-box a {
+    margin: 0 5px;
+    color: #ddd;
+    font-size: 30px;
+    transition: color .3s;
+}
+
+.icon-box a:hover {
+    color: #0086f3;
+}
