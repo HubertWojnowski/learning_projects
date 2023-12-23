@@ -20,15 +20,107 @@
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nunito:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&family=Roboto:wght@100;400;700&display=swap"
         rel="stylesheet"
     >
+    <script
+        src="https://kit.fontawesome.com/588d6b5fbb.js"
+        crossorigin="anonymous"
+    ></script>
     <link
         rel="stylesheet"
-        href="./css/styles.css"
+        href="./css/style.css"
     >
     <title>Bento</title>
 </head>
 
 <body>
-    <div class="main-square"></div>
+    <div class="main">
+
+        <div class="side-panel">
+            <h2>Bento <i class="fa-solid fa-droplet"></i></h2>
+            <ul class="side-panel-list">
+                <li class="side-panel-over">
+                    <i class="fa-solid fa-star side-icon"></i>Chat
+                </li>
+                <li class="side-panel-over">
+                    <i class="fa-solid fa-house side-icon"></i>Dashboard
+                </li>
+                <li class="side-panel-over">
+                    <i class="fa-solid fa-chart-simple side-icon"></i>Analytics
+                </li>
+                <li class="side-panel-over">
+                    <i class="fa-solid fa-calendar-days side-icon"></i>
+                    Events
+                </li>
+                <li class="side-panel-over">
+                    <i class="fa-brands fa-app-store-ios fa-solid side-icon"></i>
+                    Apps
+                </li>
+                <li class="side-panel-over">
+                    <i class="fa-solid fa-file side-icon"></i>Upload files
+                </li>
+                <li class="side-panel-over">
+                    <i class="fa-solid fa-sliders side-icon"></i>Settings
+                </li>
+                <li> <button class="storage-btn"><i class="fa-solid fa-cloud"></i>Storage</button></li>
+            </ul>
+
+        </div>
+
+        <div class="search-container">
+            <input
+                type="text"
+                class="search-bar"
+                placeholder="search for anything"
+            >
+            <div class="profile"><i class="fa-solid fa-user"></i>John Moody</div>
+        </div>
+
+        <div class="main-panels">
+
+            <div class="bento-panel">Chat with Bento <br>
+                <i class="fa-solid fa-droplet droplet-blue"></i>
+            </div>
+
+            <div class="uploads-panel">Uploads <br>
+                <i class="fa-regular fa-chart-bar"></i>
+            </div>
+
+            <div class="apps-connected-panel">
+                <i class="fa-solid fa-chart-pie"></i>
+                <h3> Apps Connected
+                </h3>
+                <ul class="apps-list-1">
+                    <li>Gmail</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+                <ul class="apps-list-2">
+                    <li>Contacts</li>
+                    <li>Notes</li>
+                    <li>Books</li>
+                </ul>
+            </div>
+
+            <div class="analytics-panel">
+                <h3>Analytics</h3>
+                <ul class="analytics-panel-list-1">
+                    <li>Items</li>
+                    <li>Spent</li>
+                    <li>Storage</li>
+                    <li>Used</li>
+                    <li>Countries</li>
+                    <li>Reports</li>
+                </ul>
+                <div class="analytics-panel-list-2">
+                    <div class="list2-things">12 k</div>
+                    <div class="list2-things">18 h</div>
+                    <div class="list2-things">9 gb</div>
+                    <div class="list2-things">53</div>
+                    <div class="list2-things">28</div>
+                </div>
+
+            </div>
+
+        </div>
 </body>
 
 </html>
