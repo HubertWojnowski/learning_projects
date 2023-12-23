@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 10px;
+  background-color: #191A19;
+}
+
+.main-square {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50%;
+}/*# sourceMappingURL=styles.css.map */
