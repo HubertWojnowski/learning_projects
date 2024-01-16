@@ -10,8 +10,20 @@ body {
   color: #fff;
 }
 
+.blue-text {
+  color: #039dff;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.6s;
+}
+
 nav {
   text-transform: uppercase;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
 }
 nav .navbar-toggler {
   padding: 10px;
@@ -24,4 +36,55 @@ nav .nav-link, nav .navbar-nav .show > .nav_link, nav .navbar-brand, nav .fa-bar
 }
 nav .nav-link:focus, nav .nav-link:hover, nav .navbar-nav .nav-link.active, nav .navbar-nav .show > .nav-link, nav .navbar-brand:hover {
   color: #039dff;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/main-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+header h1 {
+  text-transform: uppercase;
+}
+header .hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -5;
+}
+header .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+header .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  font-size: 30px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 42px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    background-image: url("../img/main-big.jpg");
+  }
 }/*# sourceMappingURL=main.css.map */
