@@ -6,11 +6,15 @@
     padding: 0;
 }
 
+html {
+    scroll-padding-top: 74px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #333;
-    color: #fff;
 }
+
 
 .blue-text {
     color: $main-color;
@@ -19,6 +23,18 @@ body {
 .shadow-bg {
     background-color: rgba(0, 0, 0,.8);
     transition: .6s;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    margin: 0 auto 40px;
+    height: 4px;
+    width: 60px;
+    background-color: $main-color;
 }
 
 nav {
@@ -35,7 +51,7 @@ nav {
         font-weight: bold;
     }
 
-    .nav-link, .navbar-nav .show>.nav_link, .navbar-brand, .fa-bars {
+    .nav-link, .navbar-nav .show>.nav_link, .navbar-brand, .fa-bars, .aboutus-2 {
         color:$white;
     }
 
@@ -55,6 +71,7 @@ header {
 
     h1 {
         text-transform: uppercase;
+        color: $white;
     }
 
     .hero-shadow {
@@ -86,6 +103,66 @@ header {
 
 }
 
+.aboutus {
+    i {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .aboutus-card-title {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .aboutus-card-text {
+        font-size: 14px;
+    }
+
+    .aboutus-hover {
+        transition: color .3s;
+    }
+
+    .aboutus-hover:hover {
+        color: $main-color;
+    }
+
+}
+
+.aboutus-2 {
+    color: $light-grey;
+}
+
+.aboutus-img {
+    position: relative;
+    background-image: url('../img/technology-small.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.aboutus-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .4);
+    z-index: -5;
+}
+
+.aboutus-hero-item {
+    margin: 10px 0;
+
+    i {
+        font-size: 36px;
+    }
+
+    .aboutus-hero-title {
+        font-size: 24px;
+    }
+}
+
 @media(min-width: 768px) {
     .hero-text {
         h1 {
@@ -98,8 +175,21 @@ header {
     }
 }
 
+@media(min-width: 992px) {
+    html {
+        scroll-padding-top: 72px;
+    }
+}
+
 @media(min-width: 1200px) {
     header {
         background-image: url('../img/main-big.jpg');
     }
+
+    .aboutus-img {
+        background-image: url('../img/technology-big.jpg');
+    }
 }
+
+
+

@@ -4,10 +4,13 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 74px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #333;
-  color: #fff;
 }
 
 .blue-text {
@@ -17,6 +20,18 @@ body {
 .shadow-bg {
   background-color: rgba(0, 0, 0, 0.8);
   transition: 0.6s;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  height: 4px;
+  width: 60px;
+  background-color: #039dff;
 }
 
 nav {
@@ -31,7 +46,7 @@ nav .navbar-toggler {
 nav .navbar-brand {
   font-weight: bold;
 }
-nav .nav-link, nav .navbar-nav .show > .nav_link, nav .navbar-brand, nav .fa-bars {
+nav .nav-link, nav .navbar-nav .show > .nav_link, nav .navbar-brand, nav .fa-bars, nav .aboutus-2 {
   color: #fff;
 }
 nav .nav-link:focus, nav .nav-link:hover, nav .navbar-nav .nav-link.active, nav .navbar-nav .show > .nav-link, nav .navbar-brand:hover {
@@ -49,6 +64,7 @@ header {
 }
 header h1 {
   text-transform: uppercase;
+  color: #fff;
 }
 header .hero-shadow {
   position: absolute;
@@ -75,6 +91,57 @@ header .fa-chevron-down {
   color: #fff;
 }
 
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+.aboutus .aboutus-hover {
+  transition: color 0.3s;
+}
+.aboutus .aboutus-hover:hover {
+  color: #039dff;
+}
+
+.aboutus-2 {
+  color: #ddd;
+}
+
+.aboutus-img {
+  position: relative;
+  background-image: url("../img/technology-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.aboutus-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -5;
+}
+
+.aboutus-hero-item {
+  margin: 10px 0;
+}
+.aboutus-hero-item i {
+  font-size: 36px;
+}
+.aboutus-hero-item .aboutus-hero-title {
+  font-size: 24px;
+}
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 42px;
@@ -83,8 +150,16 @@ header .fa-chevron-down {
     font-size: 20px;
   }
 }
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+}
 @media (min-width: 1200px) {
   header {
     background-image: url("../img/main-big.jpg");
+  }
+  .aboutus-img {
+    background-image: url("../img/technology-big.jpg");
   }
 }/*# sourceMappingURL=main.css.map */
