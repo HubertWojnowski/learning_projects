@@ -125,7 +125,7 @@ header .fa-chevron-down {
   z-index: 0;
 }
 
-.aboutus-shadow {
+.aboutus-shadow, .team-shadow {
   position: absolute;
   top: 0;
   left: 0;
@@ -196,6 +196,61 @@ header .fa-chevron-down {
   text-decoration: none;
 }
 
+.team {
+  padding-bottom: 20px;
+}
+.team h2 {
+  color: #ddd;
+}
+.team .section-title {
+  padding-top: 30px;
+}
+.team .card {
+  transition: scale 0.3s;
+}
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card i {
+  padding: 10px;
+}
+.team .card .card-title {
+  margin: 20px;
+}
+.team .card .card-body {
+  height: 160px;
+}
+.team .card:hover {
+  scale: 0.96;
+}
+
+.team-img {
+  position: relative;
+  background-image: url("../img/biuro-big.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.achivments {
+  padding: 20px;
+  background-color: #039dff;
+}
+.achivments i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.achivments .achivments-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.achivments .achivments-card-text {
+  font-size: 14px;
+}
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 42px;
@@ -215,5 +270,10 @@ header .fa-chevron-down {
   }
   .aboutus-img {
     background-image: url("../img/technology-big.jpg");
+  }
+}
+@media (min-width: 576px) {
+  .card-body {
+    height: 200px;
   }
 }/*# sourceMappingURL=main.css.map */
