@@ -1,0 +1,245 @@
+@use '../styles/colors.scss' as *;
+
+@mixin headings {
+    font-size: 1.5rem;
+    color: $DarkGrayishCyan;
+    padding-bottom: 10px;
+  }
+
+@mixin numSelector {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+    background-color: $VeryLightGrayishCyan;
+    border-radius: 5px;
+
+    input {
+        width: 80%;
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-size: 2rem;
+        color: $VeryDarkCyan;
+        background-color: $VeryLightGrayishCyan;
+        text-align: right;
+        border: none;
+    }
+
+    input:focus {
+        outline: none;
+        border: none;
+    }
+}
+
+html {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 10px;
+    background-color: $LightGrayishCyan;
+}
+
+.logo {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: $White;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.bill {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h1 {
+        @include headings;
+        }
+
+    .billAmount {
+   @include numSelector
+    }   
+}
+
+.tipSelection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+
+    h1 {
+    @include headings;
+    }
+
+    .tipProcentages {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        button {
+            margin: 10px;
+            width: 105px;
+            height: 40px;
+            font-family: "Space Mono", monospace;
+            font-weight: 700;
+            font-size: 2rem;
+            background-color: $VeryDarkCyan;
+            color: $VeryLightGrayishCyan;
+            border-radius: 5px;
+        }
+
+        button:focus {
+            background-color: $StrongCyan;
+            color: $VeryDarkCyan;
+        }
+
+        input {
+            margin: 10px;
+            width: 105px;
+            font-family: "Space Mono", monospace;
+            font-weight: 700;
+            font-size: 2rem;
+            background-color: $VeryLightGrayishCyan;
+            color: $VeryDarkCyan;
+            text-align: right;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input:focus {
+            outline: none;
+            border: none;
+        }
+    }
+}
+
+.numOfPeople {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0 20px;
+    
+
+
+    h1 {
+        @include headings;
+    }
+
+    .peopleSelector {
+        @include numSelector
+    }
+}
+
+.resultsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    height: 220px;
+    color: $VeryLightGrayishCyan;
+    font-size: 1.1rem;
+    background-color: $VeryDarkCyan;
+    border-radius: 10px;
+
+    p {
+        color: $GrayishCyan;
+    }
+
+    .results {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tipAmount,  .total{
+        padding-bottom: 20px;
+    }
+
+    .resultsNumbers {
+    font-size: 3rem;
+    color: $StrongCyan;
+
+    .tipAmountNum {
+        padding-bottom: 10px;
+    }
+    }
+
+    button {
+        padding: 8px 0;
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-size: 2rem;
+        background-color: $StrongCyan;
+        border-radius: 5px;
+    }
+
+    button:focus {
+        background-color: $VeryLightGrayishCyan;
+    }
+
+}
+
+footer {
+    padding-top: 30%;
+    position: sticky;
+}
+
+@media (min-width: 768px){
+
+    body {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    .container {
+        max-width: 90%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+    }
+
+}
+}
+
+@media (min-width: 992px) {
+    footer {
+        padding-top: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
