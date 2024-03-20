@@ -101,6 +101,11 @@ html {
             color: $VeryDarkCyan;
         }
 
+        button:hover {
+            background-color: $StrongCyan;
+            color: $VeryDarkCyan;
+        }
+
         input {
             margin: 10px;
             width: 105px;
@@ -182,7 +187,11 @@ html {
     }
 
     button:focus {
-        background-color: $VeryLightGrayishCyan;
+        background-color: $LightGrayishCyan;
+    }
+
+    button:hover {
+        background-color: $LightGrayishCyan;
     }
 
 }
@@ -227,11 +236,17 @@ footer {
 
     .desktopViewLeft {
         padding-right: 20px;
+
+        .tipProcentages {
+            flex-wrap: wrap;
+            width: 110%;
+        }
     }
 
     .desktopViewRight {
         padding-left: 20px;
         .resultsSection {
+            justify-content: space-around;
             width: 350px;
             height: 350px;
         }

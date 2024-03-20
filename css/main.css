@@ -85,6 +85,10 @@ html {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
 }
+.tipSelection .tipProcentages button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
 .tipSelection .tipProcentages input {
   margin: 10px;
   width: 105px;
@@ -174,7 +178,10 @@ html {
   border-radius: 5px;
 }
 .resultsSection button:focus {
-  background-color: hsl(189, 41%, 97%);
+  background-color: hsl(185, 41%, 84%);
+}
+.resultsSection button:hover {
+  background-color: hsl(185, 41%, 84%);
 }
 
 footer {
@@ -209,10 +216,15 @@ footer {
   .desktopViewLeft {
     padding-right: 20px;
   }
+  .desktopViewLeft .tipProcentages {
+    flex-wrap: wrap;
+    width: 110%;
+  }
   .desktopViewRight {
     padding-left: 20px;
   }
   .desktopViewRight .resultsSection {
+    justify-content: space-around;
     width: 350px;
     height: 350px;
   }
