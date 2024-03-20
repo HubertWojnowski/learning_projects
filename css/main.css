@@ -1,0 +1,230 @@
+html {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 10px;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.logo {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.bill {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.bill h1 {
+  font-size: 1.5rem;
+  color: hsl(186, 14%, 43%);
+  padding-bottom: 10px;
+}
+.bill .billAmount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 2rem;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+}
+.bill .billAmount input {
+  width: 80%;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  text-align: right;
+  border: none;
+}
+.bill .billAmount input:focus {
+  outline: none;
+  border: none;
+}
+
+.tipSelection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 20px;
+}
+.tipSelection h1 {
+  font-size: 1.5rem;
+  color: hsl(186, 14%, 43%);
+  padding-bottom: 10px;
+}
+.tipSelection .tipProcentages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tipSelection .tipProcentages button {
+  margin: 10px;
+  width: 105px;
+  height: 40px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+}
+.tipSelection .tipProcentages button:focus {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.tipSelection .tipProcentages input {
+  margin: 10px;
+  width: 105px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+}
+.tipSelection .tipProcentages input:focus {
+  outline: none;
+  border: none;
+}
+
+.numOfPeople {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0 20px;
+}
+.numOfPeople h1 {
+  font-size: 1.5rem;
+  color: hsl(186, 14%, 43%);
+  padding-bottom: 10px;
+}
+.numOfPeople .peopleSelector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 2rem;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+}
+.numOfPeople .peopleSelector input {
+  width: 80%;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  text-align: right;
+  border: none;
+}
+.numOfPeople .peopleSelector input:focus {
+  outline: none;
+  border: none;
+}
+
+.resultsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 90vw;
+  height: 220px;
+  color: hsl(189, 41%, 97%);
+  font-size: 1.1rem;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+}
+.resultsSection p {
+  color: hsl(184, 14%, 56%);
+}
+.resultsSection .results {
+  display: flex;
+  justify-content: space-between;
+}
+.resultsSection .tipAmount, .resultsSection .total {
+  padding-bottom: 20px;
+}
+.resultsSection .resultsNumbers {
+  font-size: 3rem;
+  color: hsl(172, 67%, 45%);
+}
+.resultsSection .resultsNumbers .tipAmountNum {
+  padding-bottom: 10px;
+}
+.resultsSection button {
+  padding: 8px 0;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  background-color: hsl(172, 67%, 45%);
+  border-radius: 5px;
+}
+.resultsSection button:focus {
+  background-color: hsl(189, 41%, 97%);
+}
+
+footer {
+  padding-top: 30%;
+  position: sticky;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container {
+    max-width: 90%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  body .resultsSection {
+    width: 75vw;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+  }
+  .desktopViewLeft {
+    padding-right: 20px;
+  }
+  .desktopViewRight {
+    padding-left: 20px;
+  }
+  .desktopViewRight .resultsSection {
+    width: 350px;
+    height: 350px;
+  }
+  footer {
+    padding-top: 5%;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */

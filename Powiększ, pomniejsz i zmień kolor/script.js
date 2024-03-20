@@ -11,6 +11,8 @@ const bigger = () => {
 }
 
 const smaller = () => {
+    if (fontSize <= 21) return
+
     fontSize -= 5
     text.style.fontSize = fontSize + 'px'
 }
